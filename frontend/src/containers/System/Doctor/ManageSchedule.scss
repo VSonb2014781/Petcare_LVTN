@@ -1,0 +1,146 @@
+.manage-schedule-container {
+  .m-s-title {
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 24px;
+    .logo {
+      background-image: url("../../../assets/L1.png");
+      width: 220px; /* Chiều rộng cụ thể */
+      height: 35px; /* Chiều cao cụ thể */
+      background-size: cover; /* Hiển thị toàn bộ hình ảnh */
+      background-position: center;
+      margin: auto;
+      margin-bottom: 20px; /* Căn chỉnh hình ảnh */
+    }
+  }
+
+
+  .ms-title {
+    color: #111112;
+    
+  }
+
+  .container {
+    .row {
+      margin-top: 20px;
+    }
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .pick-hour-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .btn-schedule {
+      padding: 5px 15px;
+      border: 1px solid gray;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &.active {
+        background-color: orange;
+        color: white;
+      }
+    }
+  }
+
+  .btn-save-schedule {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #e15b35;
+    color: white;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #9f5844;
+    }
+  }
+  
+  .form-control {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 14px;
+
+    &.disabled {
+      background-color: #f1f1f1;
+      cursor: not-allowed;
+    }
+  }
+
+  .label-upload {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  .preview-img-container {
+    position: relative;
+    margin-top: 10px;
+
+    .preview-image {
+      width: 100px;
+      height: 100px;
+      background-size: cover;
+      background-position: center;
+      margin-top: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      border: 1px solid #ddd;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col-3,
+  .col-6,
+  .col-12 {
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .col-6 {
+    width: 48%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+
+  .my-3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}

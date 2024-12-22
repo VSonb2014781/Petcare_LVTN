@@ -1,0 +1,70 @@
+.table {
+    width: 1350px;
+    border-collapse: collapse; /* Gộp đường viền giữa các ô */
+    margin: 20px 0;
+
+    thead {
+        background-color: #f8f9fa;
+        text-align: left;
+
+        th {
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            border: 1px solid #dee2e6; /* Đường viền giữa các ô trong phần thead */
+        }
+    }
+
+    tbody {
+        tr {
+            &:hover {
+                background-color: #f1f3f5; /* Thay đổi màu nền khi hover */
+            }
+
+            td {
+                padding: 10px;
+                vertical-align: middle; /* Căn giữa theo chiều dọc */
+                border: 1px solid #dee2e6; /* Đường viền giữa các ô trong tbody */
+            }
+
+            .img {
+                width: 80px;
+                height: 80px;
+                object-fit: cover;
+                border-radius: 8px;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .flex {
+                display: flex;
+                gap: 10px;
+
+                button {
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                }
+
+                .btn-edit {
+                    color: #007bff;
+
+                    &:hover {
+                        color: #0056b3;
+                    }
+                }
+
+                .btn-delete {
+                    color: #dc3545;
+
+                    &:hover {
+                        color: #a71d2a;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Đường viền tổng thể của bảng */
+    border: 1px solid #dee2e6;
+    border-radius: 8px; /* Tùy chọn để làm góc bo tròn */
+}

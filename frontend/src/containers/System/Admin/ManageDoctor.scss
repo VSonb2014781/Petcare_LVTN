@@ -1,0 +1,57 @@
+.manage-doctor-container {
+  padding: 5px;
+  .manage-doctor-title label {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+    text-align: left; /* Căn lề trái */
+    margin-left: 0; /* Đảm bảo không bị lệch do khoảng cách */
+  }
+  .manage-doctor-editor {
+  }
+  .save-content-doctor {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    background: #e15b35;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .create-content-doctor {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    background: #e15b35;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .more-infor {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 15px;
+
+    .content-left {
+      width: 35%;
+    }
+    .content-right {
+      width: 65%;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.doctor-extra-infor-container {
+  padding-left: 15px;
+
+  .content-up {
+    margin-bottom: 15px; // Tăng khoảng cách dưới cùng của phần content-up
+
+    .text-address {
+      text-transform: uppercase;
+      color: #030303;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px; // Tăng khoảng cách giữa text-address và các nội dung bên dưới
+    }
+
+    .name-clinic {
+      padding: 5px 0;
+      font-weight: 600;
+      color: #0e0f0f;
+      font-size: 18px;
+      margin-bottom: 10px; // Tăng khoảng cách dưới name-clinic
+    }
+
+    .detail-address {
+      font-weight: 600;
+      font-size: 14px;
+      color: #171818;
+      margin-bottom: 10px; // Tăng khoảng cách dưới detail-address
+    }
+
+    .clinic-image {
+      img {
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        margin-top: 10px; // Tăng khoảng cách trên của ảnh
+      }
+    }
+  }
+
+  .content-down {
+    font-size: 18px;
+    margin-top: 20px; // Tăng khoảng cách trên của content-down để tách ra khỏi content-up
+
+    .short-infor {
+      font-size: 14px;
+      margin-top: 10px; // Tăng khoảng cách trên của short-infor
+      display: flex;
+      align-items: center;
+      color:#c92c1a;
+      .span{
+        color: #312f2f;
+      }
+      
+      .detail {
+        cursor: pointer;
+        color: rgb(38, 160, 231);
+      }
+
+      .currency {
+        margin: 0 5px;
+      }
+    }
+
+    .title-price {
+      margin-bottom: 15px; // Tăng khoảng cách dưới của title-price
+    }
+
+    .detail-infor {
+      border: 2px solid #312f2f;
+      padding: 5px;
+      background-color: #f8f8f8;
+      margin-top: 15px; // Tăng khoảng cách trên của detail-infor
+
+      .price {
+        padding-bottom: 5px;
+
+        .right {
+          float: right;
+        }
+      }
+
+      .note {
+        margin-top: 5px;
+      }
+    }
+
+    .payment {
+      border: 1px solid #ddd;
+      padding: 5px;
+      background-color: #eee;
+      margin-top: 15px; // Tăng khoảng cách trên của payment
+    }
+
+    .hide-price {
+      margin-top: 15px; // Tăng khoảng cách trên của hide-price
+
+      span {
+        cursor: pointer;
+        color: rgb(38, 160, 231);
+      }
+    }
+  }
+}

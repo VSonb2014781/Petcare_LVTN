@@ -1,0 +1,19 @@
+
+.specialty-child {
+  cursor: pointer;
+  .specialty-name {
+    padding: 10px 0;
+    &:hover {
+      color: #e15b35;
+    }
+  }
+  // .logo {
+  //   background: url("../../assets/L1.png") left center no-repeat;
+  //   height: 100%;
+  //   width: 100%;
+  //   cursor: pointer;
+  //   transform: scale(1, 1); /* Hoặc xóa dòng này để dùng kích thước gốc */
+   
+  // }
+  
+}

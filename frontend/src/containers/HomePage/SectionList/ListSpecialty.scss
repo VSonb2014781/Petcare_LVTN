@@ -1,0 +1,141 @@
+.detail-specialty-container {
+    padding-top: 20px;
+    .home-header-banner {
+      background-image: url("../../../assets/header.png");
+      height: 550px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+    }
+    .detail-specialty-body {
+      padding: 20px 50px;
+      background: #f9f9f9; /* Thay đổi màu nền */
+      display: flex;
+      flex-direction: column;
+    
+      .description-specialty11 {
+        background-color: #fff !important;
+        padding: 20px;
+        margin: 15px 0;
+        border-radius: 8px;
+        box-shadow: 0 1px 6px rgba(32, 33, 36, 0.2);
+    
+        h1 {
+          font-size: 24px;
+          font-weight: 700;
+          margin-bottom: 15px;
+        }
+      }
+    
+      .specialty-grid {
+        display: flex;
+        flex-wrap: wrap; /* Để các phần tử xuống hàng nếu không đủ không gian */
+        gap: 15px; /* Khoảng cách giữa các phần tử */
+        justify-content: space-around; /* Căn đều các mục trong hàng */
+        padding: 20px;
+      }
+    
+      .specialty-item {
+        width: calc(25% - 15px); /* Hiển thị 4 mục mỗi hàng */
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 1px 6px rgba(32, 33, 36, 0.2);
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+        &:hover {
+          transform: scale(1.05); /* Phóng to nhẹ khi hover */
+          box-shadow: 0 4px 12px rgba(32, 33, 36, 0.3);
+        }
+    
+        .specialty-image {
+          width: 100%;
+          height: 250px; /* Chiều cao cố định */
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+    
+        .specialty-name {
+          text-align: center;
+          padding: 10px;
+          font-size: 16px;
+          font-weight: bold;
+          color: #333;
+          text-transform: uppercase;
+        }
+      }
+    
+      @media (max-width: 768px) {
+        .specialty-item {
+          width: calc(50% - 15px); /* Hiển thị 2 mục mỗi hàng trên màn hình nhỏ */
+        }
+      }
+    
+      @media (max-width: 480px) {
+        .specialty-item {
+          width: 100%; /* Hiển thị 1 mục mỗi hàng trên màn hình rất nhỏ */
+        }
+      }
+    }
+  
+    .search-sp-doctor {
+      select {
+        height: 30px;
+        padding: 5px 8px;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        cursor: pointer;
+        background-color: #f8f8f8;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+      }
+    }
+  
+    .each-doctor {
+      display: flex;
+      width: 100%;
+      min-height: 300px;
+      margin: 15px 0;
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 0 1px 6px rgba(32, 33, 36, 0.2);
+      border-radius: 8px;
+  
+      .dt-content-left {
+        width: 50%;
+        border-right: 1px solid #ddd;
+        padding-right: 10px;
+  
+        .profile-doctor-container {
+          .down {
+            padding: 5px;
+          }
+        }
+      }
+  
+      .dt-content-right {
+        width: 50%;
+        padding: 10px;
+  
+        .doctor-schedule {
+          .doctor-schedule-container {
+            border-right: unset !important;
+          }
+        }
+  
+        .doctor-extra-infor {
+          border-top: 1px solid #ddd;
+          margin-top: 10px;
+          padding-top: 10px;
+  
+          .doctor-extra-infor-container {
+            padding-left: 0 !important;
+          }
+        }
+      }
+    }
+  }
+  

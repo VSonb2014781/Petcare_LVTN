@@ -1,0 +1,148 @@
+.login-background {
+  background: #f0f2f5;
+  height: 60vh;
+
+  .login-container {
+    width: 500px;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    margin: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1) !important;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 500px !important;
+    padding: 0 0 14px 0;
+    color: #f0f2f5;
+
+    .login-content {
+      padding: 10px;
+
+      .text-login {
+        text-align: center;
+        font-weight: 600;
+        font-size: 24px;
+        padding-top: 10px;
+        color: #e15b35;
+        margin-bottom: 2px;
+      }
+      .logo {
+        background-image: url("../../assets/L1.png");
+        width: 200px; /* Chiều rộng cụ thể */
+        height: 50px; /* Chiều cao cụ thể */
+        background-size: cover; /* Hiển thị toàn bộ hình ảnh */
+        background-position: center;
+        margin: auto;
+        margin-bottom: 20px; /* Căn chỉnh hình ảnh */
+      }
+
+      .login-input {
+        margin: 7px 0;
+        color: black;
+        height: 30px;
+        margin-bottom: 30px;
+        .custom-input-password {
+          position: relative;
+          width: 100%; /* Chiếm toàn bộ chiều rộng cha */
+        
+          input {
+            width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng */
+            padding: 20px 50px 20px 20px; /* Tăng padding để tạo không gian bên trong */
+            font-size: 20px; /* Tăng kích thước chữ */
+            border: 2px solid #ccc; /* Đường viền rõ nét */
+            border-radius: 10px; /* Bo góc lớn hơn */
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Bóng mờ rõ ràng hơn */
+            transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng chuyển mượt mà */
+        
+            &:focus {
+              border-color: #007bff; /* Đổi màu viền khi focus */
+              box-shadow: 0 6px 12px rgba(0, 123, 255, 0.25); /* Bóng mờ nổi bật hơn khi focus */
+              outline: none; /* Loại bỏ viền mặc định */
+            }
+          }
+        
+          i {
+            position: absolute;
+            right: 20px; /* Cách bên phải nhiều hơn */
+            top: 50%; /* Đặt giữa theo chiều dọc */
+            transform: translateY(-50%); /* Căn chỉnh icon ở giữa */
+            font-size: 28px; /* Tăng kích thước icon */
+            color: #666; /* Màu xám đậm hơn cho icon */
+            cursor: pointer;
+            transition: color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+        
+            &:hover {
+              color: #0056b3; /* Đổi màu icon khi hover */
+            }
+          }
+        }
+        
+        
+      }
+
+      .btn-login {
+        width: 100%;
+        margin: 10px 0;
+        height: 50px;
+        border-radius: 15px;
+        outline: none;
+        border: none;
+        background: #e15b35;
+        color: rgb(248, 248, 248);
+      }
+
+      .section-forgot-signup {
+        display: flex;
+        justify-content: center;
+
+        .forgot-password {
+          font-size: 12px;
+          color: #459af7;
+        }
+        .sign-up {
+          margin-left: 27px;
+          font-size: 12px;
+          color: #459af7;
+          cursor: pointer;
+        }
+      }
+
+      .text-other-login {
+        color: black;
+      }
+
+      .social-login {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 10px;
+        .google {
+          font-size: 30px;
+          background: #c32434;
+          border-radius: 50%;
+          height: 50px;
+          width: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          margin-right: 10px;
+        }
+
+        .facebook {
+          font-size: 30px;
+          background: #307aaf;
+          border-radius: 50%;
+          height: 50px;
+          width: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+        }
+      }
+    }
+  }
+}

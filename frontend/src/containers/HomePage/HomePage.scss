@@ -1,0 +1,306 @@
+//reset slick slider css
+.sec-title {
+  &.max-width {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 0; // Khoảng cách chiều cao trên và dưới
+  }
+
+  &.text-center {
+      text-align: center;
+  }
+
+  h1 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #333333;
+      margin-bottom: 2px; // Giảm khoảng cách dưới của h1
+      line-height: 1.2;
+  }
+
+  h3 {
+      font-size: 18px;
+      font-weight: bold;
+      color: #e15b35;
+      margin-top: 0; // Loại bỏ khoảng cách trên của h3
+      margin-bottom: 15px; // Khoảng cách dưới của h3
+      line-height: 1.5;
+  }
+}
+
+
+.slick-prev {
+  border: 1px solid green !important;
+  left: -10px !important;
+  z-index: 1000 !important;
+  height: 48px !important;
+  width: 44px !important;
+  background-color: green !important;
+
+  background: #fff !important;
+  border: 2px solid #d7d7d7 !important;
+
+  &:hover {
+    background: #eceaea !important;
+  }
+}
+
+.slick-next {
+  border: 1px solid green !important;
+  right: -10px !important;
+  z-index: 1000 !important;
+  height: 48px !important;
+  width: 44px !important;
+  background-color: green !important;
+
+  background: #fff !important;
+  border: 2px solid #d7d7d7 !important;
+
+  &:hover {
+    background: #eceaea !important;
+  }
+}
+
+.slick-disabled {
+  display: none !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: FontAwesome !important;
+  color: red !important;
+  //   content: "\f060" !important;
+}
+
+.section-share {
+  &.section-specialty {
+    background: #fff;
+  }
+
+  &.section-outstanding-doctor {
+    background: #fff;
+  }
+
+  .section-body {
+    .section-customize {
+      .bg-image {
+        width: 321px;
+        height: 281px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #eee;
+
+        &.section-specialty {
+            width: 200px;
+            height: 180px;
+    
+        }
+
+        &.section-medical-facility {
+            width: 200px;
+            height: 180px;
+         
+        }
+
+        &.section-outstanding-doctor {
+          width: 160px;
+          height: 160px;
+        }
+
+        &.section-handbook {
+          background-image: url("../.././assets/handbook/may-do-huyet-ap-bap-tay.jpg");
+        }
+      }
+    }
+  }
+}
+
+.section-share {
+  height: 431px;
+
+  .section-container {
+    margin: 0 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+
+    .section-header {
+      height: 60px;
+      margin-bottom: 30px;
+      padding-top: 30px;
+
+      .title-section {
+        font-size: 22px;
+        font-weight: 600;
+        color: #000000;
+        text-align: center;
+        margin: 0 auto; /* Căn giữa theo chiều ngang */
+        display: block; /* Đảm bảo phần tử là block */
+    }
+    .logo {
+      background-image: url("../../assets/L1.png");
+      width: 220px; /* Chiều rộng cụ thể */
+      height: 35px; /* Chiều cao cụ thể */
+      background-size: cover; /* Hiển thị toàn bộ hình ảnh */
+      background-position: center;
+      margin: auto;
+      margin-bottom: 20px; /* Căn chỉnh hình ảnh */
+    }
+    
+      .btn-section {
+        float: right;
+        padding: 10px 15px;
+        border: none;
+        outline: none;
+        display: block;
+        background: #ebebeb;
+        color: black;
+        cursor: pointer;
+        text-transform: uppercase;
+        margin-right: 19px;
+
+        &:hover {
+          color: #fff;
+          background: #319C99;
+        }
+      }
+    }
+  }
+}
+.section-medical-facility {
+  .outer-bg {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .section-customize {
+    padding: 5px;
+    cursor: pointer;
+
+    .customize-border {
+      border: 2px solid #e15b35;
+      padding: 20px;
+      display: flex;
+      flex-direction: column; /* Đảm bảo các phần tử bên trong thẳng hàng theo chiều dọc */
+      justify-content: center; /* Căn giữa nội dung theo chiều dọc */
+      align-items: center; /* Căn giữa nội dung theo chiều ngang */
+      text-align: center; /* Đảm bảo tên cũng được căn giữa */
+    }
+  }
+
+  .bg-image {
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng */
+    height: 200px; /* Chiều cao cố định cho hình ảnh */
+    background-size: cover; /* Đảm bảo hình ảnh được kéo dãn vừa khít */
+    background-position: center; /* Đảm bảo hình ảnh căn giữa */
+    margin-bottom: 10px; /* Khoảng cách giữa hình ảnh và tên */
+  }
+
+  .clinic-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+}
+
+.section-specialty {
+  .outer-bg {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .header-image {
+    width: 100%; /* Hoặc điều chỉnh kích thước phù hợp */
+    max-height: 200px; /* Giới hạn chiều cao nếu cần */
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+    margin-top: 10px; /* Tạo khoảng cách giữa tiêu đề và hình ảnh */
+  }
+
+  .section-customize {
+    padding: 5px;
+    cursor: pointer;
+
+    .customize-border {
+      border: 2px solid #e15b35;
+      padding: 20px;
+      display: flex; /* Sử dụng Flexbox */
+      flex-direction: column; /* Xếp các phần tử theo chiều dọc */
+      justify-content: center; /* Căn giữa các phần tử theo chiều dọc */
+      align-items: center; /* Căn giữa các phần tử theo chiều ngang */
+      text-align: center; /* Đảm bảo rằng tên sẽ được căn giữa theo chiều ngang */
+      height: 250px; /* Đảm bảo chiều cao cố định */
+    }
+  }
+
+  .bg-image {
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng */
+    height: 150px; /* Chiều cao cố định cho hình ảnh */
+    background-size: cover; /* Đảm bảo hình ảnh kéo dãn vừa khít */
+    background-position: center; /* Đảm bảo hình ảnh căn giữa */
+    margin-bottom: 10px; /* Khoảng cách giữa hình ảnh và tên */
+  }
+
+  .specialty-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+}
+
+.section-outstanding-doctor {
+  .outer-bg {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .section-customize {
+    padding: 5px;
+    cursor: pointer;
+
+    .customize-border {
+      border: 2px solid #e15b35;
+      padding: 20px;
+    }
+  }
+  
+
+}
+
+.home-footer {
+  text-align: center;
+  padding-top: 8px;
+  a {
+    text-decoration: unset;
+  }
+}
+
+.section-about {
+  padding: 0 100px;
+  height: 500px !important;
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+  .section-about-header {
+    padding: 20px 0px !important;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .section-about-content {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    .content-left {
+      width: 60%;
+    }
+    .content-right {
+      width: 40%;
+      p {
+        text-align: justify;
+        font-style: italic;
+        padding-top: 15px;
+      }
+    }
+  }
+}

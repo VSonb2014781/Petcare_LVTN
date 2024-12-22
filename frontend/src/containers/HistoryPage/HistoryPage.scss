@@ -1,0 +1,217 @@
+div._loading_overlay_wrapper {
+  position: unset;
+
+  ._loading_overlay_overlay {
+    z-index: 1000000;
+  }
+}
+.manage-patient-container {
+  .m-p-title {
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-transform: uppercase; /* In hoa chữ cái */
+    font-weight: bold; /* Tô đậm chữ */
+  }
+  label {
+    font-size: 14px; /* Adjust font size */
+    font-weight: bold; /* Make the label bold */
+    margin-bottom: 10px;
+    margin-top: 10px;  /* Add some space below the label */
+    display: block; /* Ensure the label occupies a full line */
+    color: #333; /* Set text color */
+  }
+  .manage-patient-body {
+    padding: 0 20px;
+
+    .table-manage-patient {
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 5px;
+        text-align: left;
+      }
+      th {
+        padding: 5px;
+        text-align: left;
+      }
+      table {
+        width: 100%;
+      }
+      button {
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+      .mp-btn-confirm {
+        margin-right: 10px;
+        height: 30px;
+        border-radius: 3px;
+        background: orange;
+      }
+      .mp-btn-cancel {
+        margin-right: 10px;
+        height: 30px;
+        border-radius: 3px;
+        background: red;
+      }
+
+    }
+  }
+  .table {
+    width: 100%;
+    border-collapse: collapse; /* Gộp đường viền giữa các ô */
+    margin: 20px 0;
+    text-align: center; /* Căn giữa toàn bộ nội dung bảng */
+  
+    thead {
+      background-color: #f8f9fa;
+      text-align: center; /* Căn giữa tiêu đề cột */
+      
+      th {
+        padding: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        border: 1px solid #dee2e6;
+        text-align: center; /* Căn giữa tiêu đề cột */
+      }
+    }
+  
+    tbody {
+      tr {
+        &:hover {
+          background-color: #f1f3f5; /* Thay đổi màu nền khi hover */
+        }
+  
+        td {
+          padding: 10px;
+          vertical-align: middle; /* Căn giữa theo chiều dọc */
+          border: 1px solid #dee2e6;
+          text-align: center; /* Căn giữa nội dung ô */
+        }
+  
+        .img {
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+          border-radius: 8px;
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+  
+        .flex {
+          display: flex;
+          justify-content: center; /* Căn giữa các nút trong một ô */
+          gap: 10px;
+  
+          button {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+          }
+  
+          .btn-edit {
+            color: #007bff;
+  
+            &:hover {
+              color: #0056b3;
+            }
+          }
+  
+          .btn-delete {
+            color: #dc3545;
+  
+            &:hover {
+              color: #a71d2a;
+            }
+          }
+        }
+      }
+    }
+  
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+  }
+  
+  /* Tùy chỉnh độ rộng và căn giữa từng cột */
+ /* Cập nhật độ rộng của các cột trong bảng */
+.table th:nth-child(1),
+.table td:nth-child(1) {
+  width: 50px; /* Đặt độ rộng cho cột đầu tiên */
+  text-align: center; /* Căn giữa cột */
+}
+
+.table th:nth-child(2),
+.table td:nth-child(2) {
+  width: 150px; /* Đặt độ rộng cho cột thứ hai */
+  text-align: center; /* Căn giữa cột */
+}
+
+.table th:nth-child(3),
+.table td:nth-child(3) {
+  width: 150px; /* Đặt độ rộng cho cột thứ ba */
+  text-align: center; /* Căn giữa cột */
+}
+
+.table th:nth-child(4),
+.table td:nth-child(4) {
+  width: 300px; /* Đặt độ rộng cho cột thứ tư */
+  text-align: center; /* Căn giữa cột */
+}
+
+.table th:nth-child(5),
+.table td:nth-child(5) {
+  width: 200px; /* Đặt độ rộng cho cột thứ năm */
+  text-align: center; /* Căn giữa cột */
+}
+.table th:nth-child(6),
+.table td:nth-child(6) {
+  width: 180px; /* Đặt độ rộng cho cột thứ năm */
+  text-align: center; /* Căn giữa cột */
+}
+.table th:nth-child(9),
+.table td:nth-child(9) {
+  width: 60px; /* Đặt độ rộng cho cột thứ năm */
+  text-align: center; /* Căn giữa cột */
+}
+
+
+/* Nếu muốn thay đổi độ rộng cho tất cả các cột th và td, có thể thêm quy tắc như sau */
+.table th,
+.table td {
+  padding: 10px;
+  vertical-align: middle;
+  border: 1px solid #dee2e6;
+  text-align: center;
+}
+
+  
+  
+}
+.mp-btn-cancel {
+  margin-right: 10px;
+  height: 36px;
+  padding: 0 15px;
+  border-radius: 5px;
+  background-color: #e74c3c; /* Màu đỏ nhạt */
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng nổi */
+  transition: all 0.3s ease; 
+}
+.home-header-banner {
+  background-image: url("../../assets/header.png");
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}

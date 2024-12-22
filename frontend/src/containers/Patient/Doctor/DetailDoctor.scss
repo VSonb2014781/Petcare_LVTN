@@ -1,0 +1,100 @@
+.doctor-detail-container {
+  .description-doctor {
+    background-color: white !important;
+    padding: 10px;
+    margin: 15px 0;
+    h1,
+    h2,
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  .detail-doctor-body {
+    padding: 0 100px;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    .clinic-name {
+      font-weight: bold;
+      font-size: 22px;
+      color: #319C99; /* Màu sắc tùy chọn */
+    }
+    .clinic-image {
+      text-align: center;
+      margin: 15px 0;
+    
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px; /* Tùy chọn thêm để hình ảnh trông mềm mại */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng mờ */
+      }
+    }
+    
+  }
+
+  .intro-doctor {
+    display: flex;
+    margin: 0 100px;
+
+    .content-left {
+      width: 20%;
+
+      background: center center no-repeat;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 10px 20px;
+    }
+    .content-right {
+      width: 80%;
+
+      display: flex;
+      flex-direction: column;
+      padding-left: 10px;
+
+      .up {
+        font-size: 24px; /* Chỉnh kích thước chữ */
+        font-weight: bold; /* Đặt chữ in đậm */
+        font-weight: 600;
+        padding-top: 15px;
+        color: #171818;
+      }
+      .down {
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .schedule-doctor {
+    margin: 0 100px;
+    display: flex;
+    min-height: 200px;
+    padding: 10px 0;
+
+    .content-left {
+      width: 50%;
+    }
+    .content-right {
+      width: 50%;
+    }
+  }
+  .detail-infor-doctor {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9;
+    padding: 10px 100px;
+
+    h3 {
+      font-size: 17px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  .comment-doctor {
+    height: 50px;
+  }
+}

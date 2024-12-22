@@ -1,0 +1,77 @@
+.doctor-schedule-container {
+  border-right: 1.5px solid #0b0b0b;
+  height: 100%;
+  .all-schedule {
+    select {
+      border-bottom: 1px solid #0e0f0f;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      outline: none;
+      cursor: pointer;
+      padding: 10px 0;
+      color: #121313;
+      font-weight: 600;
+      font-size: 18px; /* Tăng kích thước font */
+      option {
+        cursor: pointer;
+        font-size: 16px; /* Tăng kích thước font */
+      }
+    }
+  }
+  .all-availabel-time {
+    .text-calendar {
+      color: #151717;
+      margin: 10px 0;
+      .icon-large {
+        font-size: 24px;
+      }
+      
+      span {
+        text-transform: uppercase;
+        margin-left: right;
+        font-size: 22px;
+      }
+    }
+    .time-content {
+      .time-content-btns {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+
+        button {
+          padding: 8px 10px;
+          border: none;
+          outline: none;
+          background-color: #e15b35;;
+
+          border-radius: 3px;
+          font-weight: 600;
+          font-size: 16px;
+          color: #ffffff;
+          &:hover {
+            background-color: #9c6e5a;
+            color: white;
+          }
+        }
+
+        .btn-vi {
+          min-width: 120px;
+        }
+        .btn-en {
+          min-width: 150px;
+        }
+
+        .no-schedule {
+          font-style: italic;
+          font-size: 16px;
+        }
+      }
+
+      .book-free {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+}
